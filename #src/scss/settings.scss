@@ -1,0 +1,98 @@
+/*$headerTopBgColor: #143F71;
+$headerTopNavHoverColor: #3967AC;
+$headerBottomBgColor: #fff;
+$main-red: #EA5D4C;*/
+
+$main-dark-blue: #143F71;
+$main-blue: #3967AC;
+$main-white: #fff;
+$main-red: #EA5D4C;
+
+$fontMainContent: "Inter";
+$fontMainSectionTitle: "Inter";
+$fontMainTags: "Inter";
+$fontMainNewsDate: "Inter";
+
+$minWidth: 320px;
+$for-desktop-up: 1200;
+$for-laptop-up: 1200;
+$for-tablet-and-phone-only: 991;
+$for-phone-only: 767;
+
+$main-border-radius: 10px;
+
+body {
+    background-color: #F6F6F6;
+    //background-color: #edeef0; // как У ВК
+    @media (max-width: $for-tablet-and-phone-only + px) {
+        &._lock{
+            overflow: hidden;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    //text-indent: 25px;
+    text-align: left;
+    margin-bottom: 1.25em;
+
+    line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1em;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+h2 {
+    
+}
+
+h3 {
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+._info-container {
+    min-width: 320px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+._container{
+    min-width: 320px;
+    max-width: $for-desktop-up + px;
+    padding: 0 20px;
+    margin: 0 auto;
+    @media (max-width: $for-desktop-up + px) {
+        max-width: 970px;
+        padding: 0 15px;
+    }
+    @media (max-width: $for-tablet-and-phone-only + px) {
+        max-width: 720px;
+    }
+    @media (max-width: $for-phone-only + px) {
+        max-width: none;
+    }
+}
